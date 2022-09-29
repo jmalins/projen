@@ -99,7 +99,7 @@ jobs:
           name: build-artifact
           path: dist
       - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
+        run: cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin
       - name: Prepare Repository
         run: mv dist .repo
       - name: Install Dependencies
@@ -127,7 +127,7 @@ jobs:
           name: build-artifact
           path: dist
       - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
+        run: cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin
       - name: Prepare Repository
         run: mv dist .repo
       - name: Install Dependencies
@@ -154,7 +154,7 @@ jobs:
           name: build-artifact
           path: dist
       - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
+        run: cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin
       - name: Prepare Repository
         run: mv dist .repo
       - name: Install Dependencies
@@ -181,7 +181,7 @@ jobs:
           name: build-artifact
           path: dist
       - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
+        run: cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin
       - name: Prepare Repository
         run: mv dist .repo
       - name: Install Dependencies
@@ -209,7 +209,7 @@ jobs:
           name: build-artifact
           path: dist
       - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
+        run: cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin
       - name: Checkout
         uses: actions/checkout@v3
         with:

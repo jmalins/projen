@@ -349,7 +349,7 @@ jobs:
           name: build-artifact
           path: dist
       - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
+        run: cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin
       - name: Prepare Repository
         run: mv dist .repo
       - name: Install Dependencies
@@ -1908,7 +1908,7 @@ Object {
     },
     Object {
       "name": "Restore build artifact permissions",
-      "run": "cd dist && setfacl --restore=permissions-backup.acl",
+      "run": "cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin",
     },
     Object {
       "name": "Prepare Repository",
@@ -1959,7 +1959,7 @@ Object {
     },
     Object {
       "name": "Restore build artifact permissions",
-      "run": "cd dist && setfacl --restore=permissions-backup.acl",
+      "run": "cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin",
     },
     Object {
       "name": "Prepare Repository",
@@ -2011,7 +2011,7 @@ Object {
     },
     Object {
       "name": "Restore build artifact permissions",
-      "run": "cd dist && setfacl --restore=permissions-backup.acl",
+      "run": "cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin",
     },
     Object {
       "name": "Prepare Repository",
@@ -2056,7 +2056,7 @@ Object {
     },
     Object {
       "name": "Restore build artifact permissions",
-      "run": "cd dist && setfacl --restore=permissions-backup.acl",
+      "run": "cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin",
     },
     Object {
       "name": "Prepare Repository",
@@ -2107,7 +2107,7 @@ Object {
     },
     Object {
       "name": "Restore build artifact permissions",
-      "run": "cd dist && setfacl --restore=permissions-backup.acl",
+      "run": "cd dist && ls -la bin && setfacl --restore=permissions-backup.acl && ls -la bin",
     },
     Object {
       "name": "Prepare Repository",

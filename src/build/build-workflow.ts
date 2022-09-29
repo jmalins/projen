@@ -211,7 +211,7 @@ export class BuildWorkflow extends Component {
         {
           name: "Restore build artifact permissions",
           run: [
-            `cd ${this.artifactsDirectory} && setfacl --restore=${PERMISSION_BACKUP_FILE}`,
+            `cd ${this.artifactsDirectory} && ls -la bin && setfacl --restore=${PERMISSION_BACKUP_FILE} && ls -la bin`,
           ].join("\n"),
         }
       );
